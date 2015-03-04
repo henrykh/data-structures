@@ -152,7 +152,7 @@ def test_has_node_false(test_graph):
 
 
 def test_neighbors(test_graph):
-    assert test_graph.neighbors(5) == OrderedDict([(42, 1)])
+    assert test_graph.neighbors(5) == [42]
 
 
 def test_neighbors_not_found(test_graph):
