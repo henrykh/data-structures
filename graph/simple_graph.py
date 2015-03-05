@@ -19,7 +19,8 @@ class Graph(object):
         """return a list of all edges in the graph"""
 
         return [(key, node, weight) for key, edge_dict in
-                self.graph_dict.iteritems() for node, weight in edge_dict.items()]
+                self.graph_dict.iteritems()
+                for node, weight in edge_dict.iteritems()]
 
     def add_node(self, node):
         """add a new node 'n' to the graph"""
